@@ -24,6 +24,7 @@
 
 body {
   background-color: var(--main-bg-color);
+  padding: 50px;
 }
 
 header {
@@ -106,5 +107,35 @@ main > p {
 }
 main hr {
   color: var(--nav-links-color);
-  margin: 20px 0px;
+  margin: 20px 0px 10px 0px;
+}
+
+/*---More articles styling---*/
+
+.more-articles {
+  font-family: var(--article-font);
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--nav-links-color);
+  padding: 25px;
+  margin-top: 25px;
+}
+
+.more-articles > section {
+  box-shadow: var(--paper-bs-color) 0px 2px 8px 0px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.more-articles section img {
+  width: 100%;
+  margin: 15px 0px;
+}
+
+.more-articles > section p {
+  padding: 0em 1.2em;
+  color: var(--nav-links-color);
+  font-family: var(--body-font);
+  font-size: 0.9rem;
 }
