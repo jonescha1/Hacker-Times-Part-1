@@ -15,3 +15,17 @@
   --nav-links-color: #777; /*---Used on the Navigation links---*/
   --other-color: black; /*---Used on all other text (headers, body, etc.)---*/
 }
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+.newspaper-container {
+  width: 700px;
+  padding: 10px;
+  margin: auto;
+  background-color: var(--paper-bg-color);
+  border-radius: 15px;
+  box-shadow: var(--paper-bs-color) 0px 50px 100px -20px,
+    var(--paper-bs-color) 0px 30px 60px -30px;
+}
