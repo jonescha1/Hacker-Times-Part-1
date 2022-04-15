@@ -26,6 +26,20 @@ body {
   background-color: var(--main-bg-color);
 }
 
+header {
+  color: var(--other-color);
+}
+#title {
+  font-family: var(--header-font);
+  text-align: center;
+  font-size: 3rem;
+  margin: 15px 0px;
+}
+.date {
+  font-family: var(--body-font);
+  color: var(--nav-links-color);
+}
+
 .newspaper-container {
   width: 700px;
   padding: 10px;
@@ -36,7 +50,7 @@ body {
     var(--paper-bs-color) 0px 30px 60px -30px;
 }
 
-/*Navigation*/
+/*Navigation styling*/
 
 nav {
   padding: 5px 0px;
@@ -64,4 +78,33 @@ nav ul li a {
 
 nav ul li a:hover {
   color: var(--nav-links-hover);
+}
+
+/*---Front page article styling---*/
+
+main {
+  font-family: var(--article-font);
+}
+main > h2 {
+  margin: 20px 0px 5px 0px;
+}
+
+main > h5 {
+  color: var(--article-txt-color);
+}
+
+main > img {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+main > p {
+  color: var(--nav-links-color);
+  font-family: var(--body-font);
+  font-size: 0.9rem;
+  padding: 0px 15px;
+}
+main hr {
+  color: var(--nav-links-color);
+  margin: 20px 0px;
 }
