@@ -13,7 +13,13 @@
   --paper-bs-color: #ddd; /*---Used on the Newspaper box-shadow---*/
   --article-txt-color: #dd3232; /*---Used on the Front-page article text---*/
   --nav-links-color: #777; /*---Used on the Navigation links---*/
+  --nav-links-hover: black; /*---Used on the Navigation links hover---*/
   --other-color: black; /*---Used on all other text (headers, body, etc.)---*/
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -28,4 +34,34 @@ body {
   border-radius: 15px;
   box-shadow: var(--paper-bs-color) 0px 50px 100px -20px,
     var(--paper-bs-color) 0px 30px 60px -30px;
+}
+
+/*Navigation*/
+
+nav {
+  padding: 5px 0px;
+  border-top: 1px solid var(--nav-links-color);
+  border-bottom: 1px solid var(--nav-links-color);
+  font-family: var(--body-font);
+}
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0px 2px;
+}
+
+nav ul li a {
+  padding: 0.2rem;
+  color: var(--nav-links-color);
+  text-decoration: none;
+  transition: 0.6s;
+}
+
+nav ul li a:hover {
+  color: var(--nav-links-hover);
 }
