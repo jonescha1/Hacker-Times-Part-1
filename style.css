@@ -126,6 +126,11 @@ main hr {
   box-shadow: var(--paper-bs-color) 0px 2px 8px 0px;
   padding: 10px;
   border-radius: 10px;
+  transition: 0.7s;
+}
+
+.more-articles > section:hover {
+  box-shadow: var(--other-color) 0px 2px 8px 0px;
 }
 
 .more-articles section img {
